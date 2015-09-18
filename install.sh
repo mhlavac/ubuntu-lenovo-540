@@ -15,6 +15,10 @@ apt-get install -y nvidia-346 nvidia-settings
 # Intel microcode
 apt-get install intel-microcode
 
+# Intel Graphics Installer for Linux* 1.2.0
+wget https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
+dpkg -i intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
+
 # Install network driver
 cd network/realtek_rtl8111_8168_8411_pci_express
 ./install.sh
