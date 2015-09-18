@@ -12,6 +12,9 @@ apt-get install -y nvidia-346 nvidia-settings
 #Screen Blanks/Monitor Turns Off (Geforce Go card)
 #If screen is blank then: edit /etc/X11/xorg.conf insert new line below "Screen" "UseDisplayDevice" "DFP", reboot
 
+# Intel microcode
+apt-get install intel-microcode
+
 # Install network driver
 cd network/realtek_rtl8111_8168_8411_pci_express
 ./install.sh
